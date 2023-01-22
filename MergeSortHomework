@@ -1,0 +1,35 @@
+MergeSortProject
+
+Merge Sort'da küçükten büyüğe sıralama diziyi küçük parçalara bölerek yapılır. Merge Sort, insertion sort'a göre performans kazancı sağlar.
+
+Aşağıdaki diziyi Merge Sort'a göre sıralayalım.
+[16,21,11,8,12,22] 
+
+1.adım:
+Verilen dizinin eleman sayısı çift olduğu için dizi direkt ikiye bölünebilir.
+[16,21,11] [8,12,22] 
+
+2.adım:
+Her iki dizi de 3 elemanlı olduğu için tekrar bir bölme işlemi yapılır.
+[16,21] [11]     [8,12] [22]
+
+3.adım:
+Her bir eleman tek kalacak şekilde ayrılır.
+16,21,11 ve 8,12,11
+
+4.adım:
+Elemanlar tekrar birleştirilirken sıralı şekilde birleştirilir.
+[16,21] [11]     [8,12] [22]
+
+5.adım:
+Diziler tekrar birleştirirken sıralı birleştirilir.
+[11,16,21]       [8,12,22]
+
+6.adım:
+İki sıralı dizi sıralı şekilde birleştirilir.
+[8,11,12,16,21,22]
+
+
+Big-O gösterimi:
+n elemanlı bir dizide her adımda sorgulama yapılabilmesi için n-1 tane işlem yapılır ve 2^x=n başlangıçtan itibaren yapılan tüm işlemler olduğu için x= log n olur.
+Dolayısıyla Big-O gösterimi ->>>>  O(n.logn)'dir. 
